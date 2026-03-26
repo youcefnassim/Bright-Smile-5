@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSmile | Votre Clinique Dentaire d'Excellence à Maghnia</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Découvrez BrightSmile, la clinique dentaire de référence à Maghnia. Implantologie, Orthodontie, Blanchiment et soins esthétiques avec les technologies les plus modernes.">
+    <meta name="keywords" content="dentiste Maghnia, clinique dentaire, implant dentaire Algérie, blanchiment dentaire, orthodontie Maghnia">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brightsmile-maghnia.com/">
+    <meta property="og:title" content="BrightSmile | Votre Clinique Dentaire à Maghnia">
+    <meta property="og:description" content="Soins dentaires de haute technologie au cœur de Maghnia. Reprenez goût au sourire !">
+    <meta property="og:image" content="assets/clinic-hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="BrightSmile Dental Clinic">
+    <meta property="twitter:description" content="Excellence dentaire à Maghnia. Matériel de pointe et experts dédiés.">
+    
+    <!-- Theme Color MS -->
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Library (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="site-header">
+        <nav class="container nav-wrapper">
+            <div class="logo">
+                <img src="assets/logo.png" alt="BrightSmile Logo" class="header-logo-img">
+                <span class="logo-text">Bright<span>Smile</span></span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Cas Cliniques</a></li>
+                <li><a href="#about">L'Équipe</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/213541706027" class="btn-primary-sm nav-btn-cta"><i class="fab fa-whatsapp"></i> Prendre RDV</a></li>
+                <li>
+                    <button id="dark-mode-toggle" class="mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-menu" id="close-menu" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-menu-logo" style="margin-bottom: 30px; text-align: center;">
+            <img src="assets/logo.png" alt="Logo" style="height: 80px; width: 80px; border-radius: 50%; border: 4px solid white; box-shadow: 0 5px 20px rgba(0,0,0,0.1); object-fit: cover;">
+        </div>
+        <a href="#hero" onclick="toggleMenu()"><i class="fas fa-home"></i> Accueil</a>
+        <a href="#services" onclick="toggleMenu()"><i class="fas fa-briefcase-medical"></i> Services</a>
+        <a href="#gallery" onclick="toggleMenu()"><i class="fas fa-images"></i> Cas Cliniques</a>
+        <a href="#about" onclick="toggleMenu()"><i class="fas fa-user-md"></i> L'Équipe</a>
+        <a href="#contact" onclick="toggleMenu()"><i class="fas fa-map-marker-alt"></i> Contact</a>
+        <a href="https://wa.me/213541706027" class="btn-primary" style="margin-top:20px; text-align:center;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Votre plus beau sourire commence <span>ici</span>.</h1>
+            <p class="hero-subtitle">Le Cabinet Dentaire BrightSmile à Maghnia utilise les dernières technologies pour redonner vie à votre sourire avec une précision absolue.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn-primary">Découvrir nos soins</a>
+                <a href="#contact" class="btn-outline">Localiser le cabinet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="highlights">
+        <div class="container grid-3">
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Examen High-Tech</h3>
+                <p>Radiographie numérique et diagnostics assistés par IA.</p>
+            </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-clock"></i>
+                <h3>Ponctualité</h3>
+                <p>Une gestion optimisée des rendez-vous sans attente.</p>
+            </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-shield-virus"></i>
+                <h3>Hygiène Stricte</h3>
+                <p>Protocoles de stérilisation aux normes internationales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-right">
+                <span class="badge">Notre Expertise</span>
+                <h2>Des soins dentaires d'excellence</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="grid-3">
+                <!-- Service 1 -->
+                <div class="service-card glass" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>Implantologie</h3>
+                    <p>Remplacez vos dents manquantes avec des implants de haute qualité d'apparence naturelle.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card glass" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Esthétique & Blanchiment</h3>
+                    <p>Retrouvez l'éclat de vos dents avec nos traitements laser professionnels.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card glass" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-teeth"></i></div>
+                    <h3>Orthodontie</h3>
+                    <p>Alignez votre sourire avec des bagues classiques ou des aligneurs invisibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Before-After Section -->
+    <section id="gallery" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header align-center" data-aos="fade-up">
+                <span class="badge">Résultats</span>
+                <h2>Sourires Transformés</h2>
+                <p>Ils nous ont fait confiance pour la chirurgie et l'esthétique.</p>
+            </div>
+            
+            <div class="before-after-grid">
+                <div class="ba-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1000" alt="Gallerie Dentaire">
+                    <div class="ba-overlay"><h3>Esthétique Avant/Après</h3></div>
+                </div>
+                <div class="ba-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1000" alt="Implantologie">
+                    <div class="ba-overlay"><h3>Implantologie Réussie</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header align-center" data-aos="fade-up">
+                <span class="badge">Avis Patients</span>
+                <h2>Ce que disent nos patients</h2>
+                <p>La satisfaction de nos patients est notre plus belle récompense.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="testimonial-card glass" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">★★★★★</div>
+                    <p>"Une équipe incroyablement professionnelle. J'avais peur du dentiste, mais ils ont su me rassurer. Les implants sont parfaits !"</p>
+                    <div class="patient-name">- Ahmed B.</div>
+                </div>
+                <div class="testimonial-card glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">★★★★★</div>
+                    <p>"Le blanchiment laser a changé ma vie. Résultat instantané et sans douleur. Je recommande vivement BrightSmile à Maghnia."</p>
+                    <div class="patient-name">- Sarah M.</div>
+                </div>
+                <div class="testimonial-card glass" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stars">★★★★★</div>
+                    <p>"Clinique très propre et moderne. La secrétaire est accueillante et le docteur prend le temps d'expliquer chaque étape."</p>
+                    <div class="patient-name">- Kamel R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container grid-2-center">
+            <div class="about-img" data-aos="fade-right">
+                <img src="assets/clinic-hero.png" alt="Cabinet BrightSmile" class="rounded-shadow">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <span class="badge">À Propos du Cabinet</span>
+                <h2>Votre santé bucco-dentaire est notre priorité absolue</h2>
+                <p>Le Cabinet BrightSmile a été fondé sur le principe de l'excellence clinique alliée à une expérience patient sans stress. Dirigé par plus de 10 ans d'expertise, nous sommes fiers de servir la communauté de Maghnia avec humanité et professionnalisme.</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> Spécialistes diplômés</li>
+                    <li><i class="fas fa-check-circle"></i> Matériel de pointe importé d'Europe</li>
+                    <li><i class="fas fa-check-circle"></i> Ambiance apaisante et chaleureuse</li>
+                </ul>
+                <a href="#contact" class="btn-primary mt-4">Nous rencontrer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding">
+        <div class="container container-sm">
+            <div class="section-header align-center" data-aos="fade-up">
+                <span class="badge">Questions</span>
+                <h2>Foire Aux Questions</h2>
+                <p>Réponses aux questions les plus fréquentes de nos patients.</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ 1 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <span>Quels sont les tarifs pour un implant dentaire ?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les tarifs varient selon le cas clinique et la marque des implants (Européens ou Américains). Nous proposons un devis détaillé après une consultation radiographique complète.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <span>Est-ce que le blanchiment dentaire fait mal ?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos techniques laser sont conçues pour être les plus indolores possibles. Une sensibilité passagère peut survenir chez certains patients, mais elle disparaît en 24h.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <span>Proposez-vous des facilités de paiement ?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous acceptons les paiements échelonnés pour toute la durée des traitements lourds (comme l'Orthodontie ou les Implants complexes).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark text-white">
+        <div class="container container-sm">
+            <div class="section-header align-center text-white" data-aos="fade-up">
+                <span class="badge badge-light">Nous Contacter</span>
+                <h2>Plannifiez votre consultation</h2>
+                <p>Nous sommes situés au cœur de Maghnia, prêts à vous recevoir.</p>
+            </div>
+            
+            <div class="contact-methods">
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Adresse</h4>
+                        <p>Cité Cadi, Maghnia 13001, Algérie</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Téléphone</h4>
+                        <p>+213 541 70 60 27</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>brightsmile.dentaire@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps Wrapper -->
+            <div class="maps-wrapper" data-aos="zoom-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13166.702410887198!2d-1.7289524!3d34.8427181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7f10118eb08451%3A0xe9f00078864c01ed!2sMaghnia!5e0!3m2!1sfr!2sdz!4v1692237890123!5m2!1sfr!2sdz" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo" style="margin-bottom: 20px;">
+                    <img src="assets/logo.png" alt="BrightSmile Logo" style="height: 60px; width: 60px; border-radius: 50%; border: 3px solid rgba(255,255,255,0.3); object-fit: cover;">
+                </div>
+                <span class="logo-text text-white">Bright<span>Smile</span></span>
+                <p style="margin-top:20px; color: #94a3b8;">Votre partenaire santé pour un sourire éclatant. Expertise, Technologie et Humanité au service de votre bouche.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Cas Cliniques</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires d'Ouverture</h4>
+                <ul class="hours-list">
+                    <li><span>Samedi - Jeudi</span> <span>08:30 - 17:00</span></li>
+                    <li><span>Vendredi</span> <span class="text-primary" style="font-weight:700;">Fermé</span></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BrightSmile Dental Clinic. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Whatsapp Floating Button -->
+    <a href="https://wa.me/213541706027" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Prendre RDV</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
